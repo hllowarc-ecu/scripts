@@ -1,6 +1,6 @@
 {
     "add a shebang":{
-        "prefix": "#!", 
+        "prefix": "she", 
         "body": [
             "#!/bin/bash"
         ],

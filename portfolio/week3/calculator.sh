@@ -24,23 +24,23 @@ read a
 read b
 
 #provides menu to choose operation and colour codes the operation 
-echo "Enter Choice:"
-echo -e ${BLUE}"1. Add"
-echo -e ${GREEN}"2. Subtract"
-echo -e ${RED}"3. Multiply"
+echo "Enter Choice:"${NORMAL}
+echo -e ${BLUE}"1. Add"${NORMAL}
+echo -e ${GREEN}"2. Subtract"${NORMAL}
+echo -e ${RED}"3. Multiply"${NORMAL}
 echo -e ${PURPLE}"4. Division"${NORMAL}
 read ch
 
 #runs users choice through bc (CLI Calculator) and returns in relevant colour
 case $ch in
     1)res=`echo $a + $b | bc`
-    echo -e "Result= ${BLUE}$res"
+    echo -e "Result= ${BLUE}$res${NORMAL}"
     ;;
     2)res=`echo $a - $b | bc`
-    echo -e "Result= ${GREEN}$res"
+    echo -e "Result= ${GREEN}$res${NORMAL}"
     ;;
     3)res=`echo $a \* $b | bc`
-    echo -e "Result= ${RED}$res"
+    echo -e "Result= ${RED}$res${NORMAL}"
     ;;
     4)res=`echo $a / $b | bc`
     echo -e "Result= ${Purple}$res${NORMAL}"
